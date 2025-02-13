@@ -15,4 +15,9 @@ public class MiTest {
     public void testSuma() {
         Assertions.assertEquals(7, new Main().sumar(3, 4));
     }
+
+    @Test
+    public void testSumaError() {
+        Assertions.assertNotEquals(5, new Main().sumar(2, 2));
+    }
 }
